@@ -8,6 +8,7 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -20,12 +21,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:insetBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
             android:text="Home"
             android:textSize="10dp"
             android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -34,12 +35,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:insetBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
             android:text="Profile"
             android:textSize="10dp"
             android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/Home"
             tools:ignore="HardCodedText" />
@@ -49,12 +50,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:insetBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
             android:text="Info."
             android:textSize="10dp"
             android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/profile" />
 
@@ -63,12 +64,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:insetBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
             android:text="Learn"
             android:textSize="10dp"
             android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/info" />
 
@@ -77,12 +78,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:insetBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
             android:text="Test"
             android:textSize="10dp"
             android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/learn" />
 
@@ -91,12 +92,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:insetBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
             android:text="Forum"
             android:textSize="10dp"
             android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/test" />
 
@@ -105,16 +106,44 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:insetBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
             android:text="Donate"
             android:textSize="10dp"
             android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/forum" />
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/Introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Welcome to S1mplify"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/purple_700"
+        android:textFontWeight="1000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="monospace"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Introduction">
 
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPager1"
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:background="@drawable/slideshow_layout"></androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
