@@ -11,12 +11,13 @@ class Donate : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDonateBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         //Home mover
-        /** binding.Home.setOnClickListener{
+        binding.Home.setOnClickListener{
         val intent_Home: Intent = Intent(applicationContext,MainActivity::class.java)
         startActivity(intent_Home)
         }
-         */
+
         //Profile activity mover
         binding.profile.setOnClickListener{
             val intent_profile: Intent = Intent(applicationContext, Profile::class.java)

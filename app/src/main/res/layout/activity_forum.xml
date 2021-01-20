@@ -6,80 +6,119 @@
     android:layout_height="match_parent"
     tools:context=".Forum">
 
-    <Button
-        android:id="@+id/Home"
-        android:layout_width="150px"
-        android:layout_height="100px"
-        android:text="Home"
-        android:textSize="6sp"
-        android:textStyle="bold"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/Buttons"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <Button
-        android:id="@+id/profile"
-        android:layout_width="160px"
-        android:layout_height="100px"
-        android:text="Profile"
-        android:textSize="6sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Home"
-        tools:ignore="HardCodedText" />
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:insetBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/info"
-        android:layout_width="150px"
-        android:layout_height="100px"
-        android:text="Info."
-        android:textSize="6sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/profile" />
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:insetBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Home"
+            tools:ignore="HardCodedText" />
 
-    <Button
-        android:id="@+id/learn"
-        android:layout_width="150px"
-        android:layout_height="100px"
-        android:text="Learn"
-        android:textSize="6sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/info" />
+        <Button
+            android:id="@+id/info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Info."
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:insetBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile" />
 
-    <Button
-        android:id="@+id/test"
-        android:layout_width="150px"
-        android:layout_height="100px"
-        android:text="Test"
-        android:textSize="6sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/learn" />
+        <Button
+            android:id="@+id/learn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Learn"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:insetBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/info" />
 
-    <Button
-        android:id="@+id/forum"
-        android:layout_width="150px"
-        android:layout_height="100px"
-        android:text="Forum"
-        android:textSize="6sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/test" />
+        <Button
+            android:id="@+id/test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Test"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:insetBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/learn" />
 
-    <Button
-        android:id="@+id/donate"
-        android:layout_width="170px"
-        android:layout_height="100px"
-        android:text="Donate"
-        android:textSize="6sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/forum" />
+        <Button
+            android:id="@+id/forum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Forum"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:insetBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/test" />
+
+        <Button
+            android:id="@+id/donate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Donate"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:insetBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/forum" />
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/Buttons"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -93,17 +132,17 @@
                 android:id="@+id/Infopage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:text="This is where we will give option for community discussions"
                 android:textAlignment="center"
-                android:text="This is where we will give option for community discussions" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:text="This is indeed Forum page"
                 android:textAlignment="center"
-                android:text="This is indeed Forum page" />
+                android:textColor="@color/black" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

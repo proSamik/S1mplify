@@ -6,11 +6,15 @@ import android.os.Bundle
 import android.view.View
 import com.example.s1mplify.databinding.ActivityMainBinding
 import android.widget.Button
-
+import androidx.viewpager.widget.ViewPager
 
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
+    var viewPager: ViewPager? = null
+    var images = intArrayOf(R.drawable.photo1,R.drawable.photo2,R.drawable.photo3,R.drawable.photo4,
+            R.drawable.photo5,R.drawable.photo6,R.drawable.photo7)
+    var MyAdapter: ViewPagerAdapter?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,5 +62,14 @@ class MainActivity : AppCompatActivity() {
             val intent_donate: Intent =Intent(applicationContext,Donate::class.java )
             startActivity(intent_donate)
         }
+
+
+
+        //ViewPager
+        viewPager = binding.ViewPager1 as ViewPager
+
+        MyAdapter= ViewPagerAdapter(this,images)
+
+        viewPager!!.adapter= MyAdapter
     }
 }
