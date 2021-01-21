@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.S1mplify">
-        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".MAIN"
+            android:label="@string/title_activity_m_a_i_n"
+            android:theme="@style/Theme.S1mplify.NoActionBar"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Donate" />
         <activity android:name=".Forum" />
         <activity android:name=".Test" />
