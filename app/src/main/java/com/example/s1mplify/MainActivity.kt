@@ -12,7 +12,7 @@ import androidx.viewpager.widget.ViewPager
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     var viewPager: ViewPager? = null
-    var images = intArrayOf(R.drawable.photo1,R.drawable.photo2,R.drawable.photo3,R.drawable.photo4,
+    var images = intArrayOf(R.drawable.photo2,R.drawable.photo3,R.drawable.photo4,
             R.drawable.photo5,R.drawable.photo6,R.drawable.photo7)
     var MyAdapter: ViewPagerAdapter?= null
 
