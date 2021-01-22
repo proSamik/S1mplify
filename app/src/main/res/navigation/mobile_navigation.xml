@@ -16,6 +16,7 @@
         android:name="com.example.s1mplify.ui.gallery.GalleryFragment"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
@@ -25,6 +26,8 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 =======
+=======
+>>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
         android:label="STASTICS"

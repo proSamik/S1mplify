@@ -27,6 +27,10 @@ class MAIN : AppCompatActivity() {
     lateinit var LEARN: Button
     lateinit var INFO: Button
 
+    lateinit var DONATE: Button
+    lateinit var LEARN: Button
+    lateinit var INFO: Button
+
     private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -27,8 +27,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <style name="Theme.S1mplify.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 =======
+=======
+>>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
     <style name="Theme.S1mplify.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />

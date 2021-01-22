@@ -3,7 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     tools:showIn="navigation_view">
+=======
+    tools:showIn="navigation_view"
+    >
+>>>>>>> f978cba (Updated a new layout)
 =======
     tools:showIn="navigation_view"
     >
@@ -18,6 +23,7 @@
             android:id="@+id/nav_home"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
@@ -29,6 +35,8 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
 =======
+=======
+>>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
             android:icon="@drawable/ic_round_person_24"
@@ -55,6 +63,9 @@
             android:title="SIGN IN/SIGN UP" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f978cba (Updated a new layout)
+=======
 >>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
