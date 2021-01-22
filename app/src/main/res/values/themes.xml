@@ -17,7 +17,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
 =======
@@ -29,6 +32,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     </style>
@@ -58,6 +62,8 @@
 >>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
+=======
+>>>>>>> f978cba (Updated a new layout)
     </style>
 
     <style name="Theme.S1mplify.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark" />
@@ -67,8 +73,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <style name="Theme.S1mplify.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 =======
+=======
+>>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
 =======
