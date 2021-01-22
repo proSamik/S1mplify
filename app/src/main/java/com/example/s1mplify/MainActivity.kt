@@ -45,17 +45,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent_info)
         }
 
-        //Test Activity Mover
-        binding.test.setOnClickListener{
-            val intent_test: Intent = Intent(applicationContext, Test::class.java)
-            startActivity(intent_test)
-        }
-
-        //Forum Activity Mover
-        binding.forum.setOnClickListener{
-            val intent_forum: Intent = Intent(applicationContext, Forum::class.java)
-            startActivity(intent_forum)
-        }
 
         //Donate Activity Mover
         binding.donate.setOnClickListener{

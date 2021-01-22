@@ -4,112 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Donate">
+    tools:context=".Donate"
+    android:background="@color/back_grey">
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#201F1F">
 
+        <!--Home Button-->
         <Button
-            android:id="@+id/Home"
+            android:id="@+id/profile"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/home_button_white"
+            android:padding="5dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Home"
             android:textSize="10dp"
             android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/profile"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Profile"
-            android:textSize="10dp"
-            android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/Home"
-            tools:ignore="HardCodedText" />
 
+        <!--Info Button-->
         <Button
             android:id="@+id/info"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/learn_button"
             android:text="Info."
             android:textSize="10dp"
             android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/profile" />
 
+        <!--Learn Button-->
+
         <Button
             android:id="@+id/learn"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/learn_button1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Learn"
             android:textSize="10dp"
             android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/info" />
 
-        <Button
-            android:id="@+id/test"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Test"
-            android:textSize="10dp"
-            android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/learn" />
 
-        <Button
-            android:id="@+id/forum"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Forum"
-            android:textSize="10dp"
-            android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/test" />
-
+        <!--Donate Button-->
         <Button
             android:id="@+id/donate"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/yellow"
+            android:drawableTop="@drawable/donate_button_yellow"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Donate"
             android:textSize="10dp"
             android:textStyle="bold"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:insetBottom="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/forum" />
     </LinearLayout>
