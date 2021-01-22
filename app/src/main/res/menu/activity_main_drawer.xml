@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     tools:showIn="navigation_view">
 =======
     tools:showIn="navigation_view"
@@ -41,6 +42,8 @@
 =======
 >>>>>>> f978cba (Updated a new layout)
 =======
+=======
+>>>>>>> f978cba (Updated a new layout)
     tools:showIn="navigation_view"
     >
 
@@ -49,7 +52,10 @@
 
         <item
             android:id="@+id/nav_home"
+<<<<<<< HEAD
 >>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
+=======
+>>>>>>> f978cba (Updated a new layout)
             android:icon="@drawable/ic_round_person_24"
             android:title="MY PROFILE" />
 
@@ -76,6 +82,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
@@ -83,5 +90,7 @@
 >>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
+=======
+>>>>>>> f978cba (Updated a new layout)
     </group>
 </menu>

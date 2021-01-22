@@ -15,7 +15,10 @@
         <item name="listPreferredItemPaddingStart">60dp</item>
         <item name="listPreferredItemHeightSmall">60dp</item>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f978cba (Updated a new layout)
     </style>
 
     <style name="Theme.S1mplify.NoActionBar">
@@ -23,6 +26,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
+<<<<<<< HEAD
     </style>
 
     <style name="Theme.S1mplify.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark" />
@@ -46,6 +50,8 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
+=======
+>>>>>>> f978cba (Updated a new layout)
     </style>
 
     <style name="Theme.S1mplify.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark" />
@@ -53,8 +59,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <style name="Theme.S1mplify.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 =======
+=======
+>>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
 =======

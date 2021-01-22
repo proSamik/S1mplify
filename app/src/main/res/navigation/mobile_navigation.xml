@@ -34,7 +34,10 @@
 =======
         android:id="@+id/nav_stats"
         android:name="com.example.s1mplify.ui.gallery.GalleryFragment"
+<<<<<<< HEAD
 >>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
+=======
+>>>>>>> f978cba (Updated a new layout)
         android:label="STASTICS"
         tools:layout="@layout/fragment_gallery" />
 

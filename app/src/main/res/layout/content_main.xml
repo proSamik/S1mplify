@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         app:navGraph="@navigation/mobile_navigation" />
 =======
 =======
@@ -30,6 +31,8 @@
 >>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
+=======
+>>>>>>> f978cba (Updated a new layout)
         app:navGraph="@navigation/mobile_navigation"></fragment>
 
     <LinearLayout
@@ -113,6 +116,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
@@ -120,4 +124,6 @@
 >>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
+=======
+>>>>>>> f978cba (Updated a new layout)
 </androidx.constraintlayout.widget.ConstraintLayout>
