@@ -12,6 +12,7 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+<<<<<<< HEAD
         android:id="@+id/nav_gallery"
         android:name="com.example.s1mplify.ui.gallery.GalleryFragment"
 <<<<<<< HEAD
@@ -30,6 +31,10 @@
 >>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
+=======
+        android:id="@+id/nav_stats"
+        android:name="com.example.s1mplify.ui.gallery.GalleryFragment"
+>>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
         android:label="STASTICS"
         tools:layout="@layout/fragment_gallery" />
 
@@ -48,5 +53,8 @@
         android:name="com.example.s1mplify.ui.LoginFragment"
         android:label="SIGN IN/ SIGN UP"
         tools:layout="@layout/fragment_home" />
+<<<<<<< HEAD
 >>>>>>> f978cba (Updated a new layout)
+=======
+>>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
 </navigation>

@@ -8,7 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
     <color name="light_blue_600">#FF039BE5</color>
     <color name="light_blue_900">#FF01579B</color>
     <color name="light_blue_A200">#FF40C4FF</color>
@@ -18,9 +21,12 @@
     <color name="back_grey">#3D3D3D</color>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
+=======
+>>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
 </resources>

@@ -9,10 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.S1mplify">
+<<<<<<< HEAD
         <activity
             android:name=".MAIN"
             android:label="@string/title_activity_m_a_i_n"
             android:theme="@style/Theme.S1mplify.NoActionBar"></activity>
+=======
+        <activity android:name=".QuotesView"></activity>
+        <activity
+            android:name=".main"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.S1mplify.NoActionBar"> <!--  -->
+        </activity>
+>>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
         <activity android:name=".MainActivity" />
         <activity android:name=".Donate" />
         <activity android:name=".Forum" />

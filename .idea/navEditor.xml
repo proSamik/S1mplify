@@ -8,13 +8,22 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+<<<<<<< HEAD
                   <entry key="nav_gallery">
+=======
+                  <entry key="about_us">
+>>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
+<<<<<<< HEAD
                             <option name="x" value="256" />
                             <option name="y" value="12" />
+=======
+                            <option name="x" value="253" />
+                            <option name="y" value="329" />
+>>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -32,13 +41,45 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+<<<<<<< HEAD
                   <entry key="nav_slideshow">
+=======
+                  <entry key="nav_settings">
+>>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
                             <option name="x" value="12" />
+<<<<<<< HEAD
                             <option name="y" value="368" />
+=======
+                            <option name="y" value="337" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="nav_stats">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="256" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="sign_option">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="18" />
+                            <option name="y" value="651" />
+>>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
                           </Point>
                         </option>
                       </LayoutPositions>

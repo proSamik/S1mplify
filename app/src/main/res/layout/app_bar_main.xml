@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context=".MAIN">
+=======
+    tools:context=".main">
+>>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -16,7 +20,12 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
+<<<<<<< HEAD
             app:popupTheme="@style/Theme.S1mplify.PopupOverlay" />
+=======
+            app:popupTheme="@style/Theme.S1mplify.PopupOverlay"
+            />
+>>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -26,6 +35,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     </include>
@@ -36,4 +46,7 @@
 =======
     </include>
 >>>>>>> f978cba (Updated a new layout)
+=======
+    </include>
+>>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
