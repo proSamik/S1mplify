@@ -13,16 +13,10 @@ class Information : AppCompatActivity() {
         binding = ActivityInformationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //Home mover
-        binding.Home.setOnClickListener{
-        val intent_Home: Intent = Intent(applicationContext,MainActivity::class.java)
-        startActivity(intent_Home)
-        }
-
-        //Profile activity mover
+        //Profile mover
         binding.profile.setOnClickListener{
-            val intent_profile: Intent = Intent(applicationContext, Profile::class.java)
-            startActivity(intent_profile)
+        val intent_Home: Intent = Intent(applicationContext,main::class.java)
+        startActivity(intent_Home)
         }
 
         //Learn Activity Mover
@@ -30,8 +24,6 @@ class Information : AppCompatActivity() {
             val intent_learn: Intent = Intent(applicationContext, Learn::class.java)
             startActivity(intent_learn)
         }
-
-
         //Donate Activity Mover
         binding.donate.setOnClickListener{
             val intent_donate: Intent =Intent(applicationContext,Donate::class.java )

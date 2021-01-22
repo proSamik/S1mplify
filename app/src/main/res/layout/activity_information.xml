@@ -4,110 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Information">
+    tools:context=".Information"
+    android:background="@color/back_grey">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#201F1F">
 
+        <!--Home Button-->
         <Button
-            android:id="@+id/Home"
+            android:id="@+id/profile"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/home_button_white"
+            android:padding="5dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:insetBottom="0dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
             android:text="Home"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/profile"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:insetBottom="0dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:text="Profile"
-            android:textSize="10dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/Home"
-            tools:ignore="HardCodedText" />
 
+        <!--Info Button-->
         <Button
             android:id="@+id/info"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:insetBottom="0dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/yellow"
+            android:drawableTop="@drawable/info_yellow"
             android:text="Info."
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/profile" />
 
+        <!--Learn Button-->
+
         <Button
             android:id="@+id/learn"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/learn_button1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:insetBottom="0dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
             android:text="Learn"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/info" />
 
-        <Button
-            android:id="@+id/test"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:insetBottom="0dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:text="Test"
-            android:textSize="10dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/learn" />
 
-        <Button
-            android:id="@+id/forum"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:insetBottom="0dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:text="Forum"
-            android:textSize="10dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/test" />
-
+        <!--Donate Button-->
         <Button
             android:id="@+id/donate"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/donate_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:insetBottom="0dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
             android:text="Donate"
             android:textSize="10dp"
             android:textStyle="bold"
@@ -115,35 +85,5 @@
             app:layout_constraintStart_toEndOf="@+id/forum" />
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/Infopage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="This is where we will give information"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/message"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="This is indeed information page"
-                android:textAlignment="center"
-                android:textColor="@color/black" />
-        </LinearLayout>
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

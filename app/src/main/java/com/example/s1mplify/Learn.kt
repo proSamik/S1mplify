@@ -14,16 +14,11 @@ class Learn : AppCompatActivity() {
 
 
         //Home activity mover
-        binding.Home.setOnClickListener{
-            val intent_Home: Intent = Intent(applicationContext,MainActivity::class.java)
+        binding.profile.setOnClickListener{
+            val intent_Home: Intent = Intent(applicationContext,main::class.java)
             startActivity(intent_Home)
         }
 
-        //Profile Activity mover
-        binding.profile.setOnClickListener{
-            val intent_profile: Intent = Intent(applicationContext, Profile::class.java)
-            startActivity(intent_profile)
-        }
         //Info activity Mover
         binding.info.setOnClickListener{
             val intent_info: Intent = Intent(applicationContext, Information::class.java )

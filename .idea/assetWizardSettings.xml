@@ -320,7 +320,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/login/baseline_login_24.xml" />
+                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialiconsround/notifications/round_notifications_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -330,7 +330,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="login_image" />
+                            <entry key="color" value="ffffff" />
+                            <entry key="outputName" value="notification" />
                           </map>
                         </option>
                       </PersistentState>
