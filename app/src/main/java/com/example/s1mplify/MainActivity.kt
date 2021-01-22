@@ -12,7 +12,7 @@ import androidx.viewpager.widget.ViewPager
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     var viewPager: ViewPager? = null
-    var images = intArrayOf(R.drawable.photo1,R.drawable.photo2,R.drawable.photo3,R.drawable.photo4,
+    var images = intArrayOf(R.drawable.photo2,R.drawable.photo3,R.drawable.photo4,
             R.drawable.photo5,R.drawable.photo6,R.drawable.photo7)
     var MyAdapter: ViewPagerAdapter?= null
 
@@ -45,17 +45,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent_info)
         }
 
-        //Test Activity Mover
-        binding.test.setOnClickListener{
-            val intent_test: Intent = Intent(applicationContext, Test::class.java)
-            startActivity(intent_test)
-        }
-
-        //Forum Activity Mover
-        binding.forum.setOnClickListener{
-            val intent_forum: Intent = Intent(applicationContext, Forum::class.java)
-            startActivity(intent_forum)
-        }
 
         //Donate Activity Mover
         binding.donate.setOnClickListener{
