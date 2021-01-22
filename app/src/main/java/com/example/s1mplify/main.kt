@@ -17,7 +17,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.example.s1mplify.databinding.ActivityMainBinding
 
-class main : AppCompatActivity() {
+class MAIN : AppCompatActivity() {
+
+    lateinit var DONATE: Button
+    lateinit var LEARN: Button
+    lateinit var INFO: Button
+
+    lateinit var DONATE: Button
+    lateinit var LEARN: Button
+    lateinit var INFO: Button
 
     lateinit var DONATE: Button
     lateinit var LEARN: Button
@@ -27,10 +35,15 @@ class main : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main)
+        setContentView(R.layout.m_a_i_n)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        val fab: FloatingActionButton = findViewById(R.id.fab)
+        fab.setOnClickListener { view ->
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()
+        }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
@@ -38,8 +51,7 @@ class main : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_stats, R.id.nav_settings,
-                R.id.about_us, R.id.sign_option
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -70,7 +82,7 @@ class main : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
+        menuInflater.inflate(R.menu.m_a_i_n, menu)
         return true
     }
 
