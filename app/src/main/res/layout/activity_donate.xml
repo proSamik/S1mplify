@@ -4,30 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Donate"
-    android:background="@color/back_grey">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:ignore="ExtraText"
+    tools:showIn="@layout/donate_bar">
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation"></fragment>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#201F1F"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="#201F1F">
+        app:layout_constraintStart_toStartOf="parent">
 
         <!--Home Button-->
         <Button
             android:id="@+id/profile"
-            android:background="@android:color/transparent"
-            android:textColor="@color/white"
-            android:drawableTop="@drawable/home_button_white"
-            android:padding="5dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/home_button_white"
+            android:padding="5dp"
             android:text="Home"
+            android:textColor="@color/white"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -40,11 +53,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:padding="5dp"
             android:background="@android:color/transparent"
-            android:textColor="@color/white"
             android:drawableTop="@drawable/learn_button"
+            android:padding="5dp"
             android:text="Info."
+            android:textColor="@color/white"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -54,14 +67,14 @@
 
         <Button
             android:id="@+id/learn"
-            android:padding="5dp"
-            android:background="@android:color/transparent"
-            android:textColor="@color/white"
-            android:drawableTop="@drawable/learn_button1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/learn_button1"
+            android:padding="5dp"
             android:text="Learn"
+            android:textColor="@color/white"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -71,14 +84,14 @@
         <!--Donate Button-->
         <Button
             android:id="@+id/donate"
-            android:padding="5dp"
-            android:background="@android:color/transparent"
-            android:textColor="@color/yellow"
-            android:drawableTop="@drawable/donate_button_yellow"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/donate_button_yellow"
+            android:padding="5dp"
             android:text="Donate"
+            android:textColor="@color/yellow"
             android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"

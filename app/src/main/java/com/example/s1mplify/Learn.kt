@@ -14,7 +14,7 @@ class Learn : AppCompatActivity() {
 
 
         //Home activity mover
-        binding.Home.setOnClickListener{
+        binding.profile.setOnClickListener{
             val intent_Home: Intent = Intent(applicationContext,main::class.java)
             startActivity(intent_Home)
         }

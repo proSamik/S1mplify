@@ -13,8 +13,8 @@ class Information : AppCompatActivity() {
         binding = ActivityInformationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //Home mover
-        binding.Home.setOnClickListener{
+        //Profile mover
+        binding.profile.setOnClickListener{
         val intent_Home: Intent = Intent(applicationContext,main::class.java)
         startActivity(intent_Home)
         }
