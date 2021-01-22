@@ -8,12 +8,13 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.s1mplify.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="HOME"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.s1mplify.ui.gallery.GalleryFragment"
+<<<<<<< HEAD
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
@@ -22,4 +23,24 @@
         android:name="com.example.s1mplify.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+=======
+        android:label="STASTICS"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.s1mplify.ui.SettingsFragment"
+        android:label="SETTINGS"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/about_us"
+        android:name="com.example.s1mplify.ui.aboutus"
+        android:label="ABOUT US"
+        tools:layout="@layout/fragment_aboutus" />
+    <fragment
+        android:id="@+id/sign_option"
+        android:name="com.example.s1mplify.ui.LoginFragment"
+        android:label="SIGN IN/ SIGN UP"
+        tools:layout="@layout/fragment_home" />
+>>>>>>> f978cba (Updated a new layout)
 </navigation>
