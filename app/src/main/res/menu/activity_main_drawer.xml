@@ -2,7 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
 <<<<<<< HEAD
+<<<<<<< HEAD
     tools:showIn="navigation_view">
+=======
+    tools:showIn="navigation_view"
+    >
+>>>>>>> f978cba (Updated a new layout)
 =======
     tools:showIn="navigation_view"
     >
@@ -11,6 +16,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
+<<<<<<< HEAD
 <<<<<<< HEAD
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
@@ -23,6 +29,8 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
 =======
+=======
+>>>>>>> f978cba (Updated a new layout)
             android:icon="@drawable/ic_round_person_24"
             android:title="MY PROFILE" />
 
@@ -46,6 +54,9 @@
             android:icon="@drawable/login_image"
             android:title="SIGN IN/SIGN UP" />
 
+<<<<<<< HEAD
+>>>>>>> f978cba (Updated a new layout)
+=======
 >>>>>>> f978cba (Updated a new layout)
     </group>
 </menu>

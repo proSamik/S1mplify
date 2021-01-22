@@ -19,8 +19,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 <<<<<<< HEAD
+<<<<<<< HEAD
         app:navGraph="@navigation/mobile_navigation" />
 =======
+=======
+>>>>>>> f978cba (Updated a new layout)
         app:navGraph="@navigation/mobile_navigation"></fragment>
 
     <LinearLayout
@@ -101,5 +104,8 @@
             app:layout_constraintStart_toEndOf="@+id/forum" />
     </LinearLayout>
 
+<<<<<<< HEAD
+>>>>>>> f978cba (Updated a new layout)
+=======
 >>>>>>> f978cba (Updated a new layout)
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,8 +26,11 @@
     <style name="Theme.S1mplify.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <style name="Theme.S1mplify.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 =======
+=======
+>>>>>>> f978cba (Updated a new layout)
     <style name="Theme.S1mplify.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
 
     <style name="Theme.S1mplify.Fullscreen" parent="Theme.S1mplify">

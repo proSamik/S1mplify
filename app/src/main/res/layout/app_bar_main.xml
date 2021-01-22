@@ -24,7 +24,11 @@
         layout="@layout/content_main">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+    </include>
+>>>>>>> f978cba (Updated a new layout)
 =======
     </include>
 >>>>>>> f978cba (Updated a new layout)
