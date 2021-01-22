@@ -3,14 +3,13 @@ package com.example.s1mplify
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.s1mplify.databinding.ActivityInformationBinding
+import com.example.s1mplify.databinding.ActivityTestBinding
 
-class Information : AppCompatActivity() {
-    lateinit var binding: ActivityInformationBinding
-
+class Test : AppCompatActivity() {
+    lateinit var binding: ActivityTestBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityInformationBinding.inflate(layoutInflater)
+        binding = ActivityTestBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //Home mover
@@ -25,16 +24,17 @@ class Information : AppCompatActivity() {
             startActivity(intent_profile)
         }
 
+        //Info activity Mover
+        binding.info.setOnClickListener{
+            val intent_info: Intent = Intent(applicationContext, Information::class.java )
+            startActivity(intent_info)
+        }
+
+
         //Learn Activity Mover
         binding.learn.setOnClickListener {
             val intent_learn: Intent = Intent(applicationContext, Learn::class.java)
             startActivity(intent_learn)
-        }
-
-        //Test Activity Mover
-        binding.test.setOnClickListener{
-            val intent_test: Intent = Intent(applicationContext, Test::class.java)
-            startActivity(intent_test)
         }
 
         //Forum Activity Mover
@@ -45,9 +45,8 @@ class Information : AppCompatActivity() {
 
         //Donate Activity Mover
         binding.donate.setOnClickListener{
-            val intent_donate: Intent =Intent(applicationContext,Donate::class.java )
+            val intent_donate: Intent = Intent(applicationContext,Donate::class.java )
             startActivity(intent_donate)
         }
     }
-
 }

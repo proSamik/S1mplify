@@ -1,9 +1,7 @@
 package com.example.s1mplify
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import android.widget.Button
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -15,13 +13,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import com.example.s1mplify.databinding.ActivityMainBinding
 
 class MAIN : AppCompatActivity() {
-
-    lateinit var DONATE: Button
-    lateinit var LEARN: Button
-    lateinit var INFO: Button
 
     lateinit var DONATE: Button
     lateinit var LEARN: Button
@@ -56,28 +49,6 @@ class MAIN : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
-
-        DONATE= findViewById(R.id.donate)
-
-        DONATE.setOnClickListener{
-            val intent_Donate: Intent = Intent(this,Donate::class.java)
-            startActivity(intent_Donate)
-        }
-
-        LEARN = findViewById(R.id.learn)
-
-        LEARN.setOnClickListener{
-            val intent_learn: Intent = Intent(applicationContext, Learn::class.java)
-            startActivity(intent_learn)
-        }
-
-        INFO = findViewById(R.id.info)
-
-        INFO.setOnClickListener{
-            val intent_info: Intent = Intent(applicationContext, Information::class.java )
-            startActivity(intent_info)
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

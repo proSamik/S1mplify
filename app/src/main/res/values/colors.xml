@@ -17,6 +17,7 @@
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
+<<<<<<< HEAD
     <color name="yellow">#EBD90A</color>
     <color name="back_grey">#3D3D3D</color>
 <<<<<<< HEAD
@@ -38,4 +39,6 @@
 >>>>>>> f978cba (Updated a new layout)
 =======
 >>>>>>> f978cba (Updated a new layout)
+=======
+>>>>>>> parent of f978cba (Updated a new layout)
 </resources>

@@ -29,9 +29,9 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include
-        layout="@layout/content_main">
+    <include layout="@layout/content_main" />
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,4 +61,6 @@
 =======
     </include>
 >>>>>>> f978cba (Updated a new layout)
+=======
+>>>>>>> parent of f978cba (Updated a new layout)
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

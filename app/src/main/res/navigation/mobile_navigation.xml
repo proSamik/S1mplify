@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.s1mplify.ui.home.HomeFragment"
-        android:label="HOME"
+        android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
@@ -37,6 +37,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f978cba0161f83f72e315cdf090db8a81106d0c9
 =======
 >>>>>>> f978cba (Updated a new layout)
@@ -45,22 +46,25 @@
 =======
 >>>>>>> f978cba (Updated a new layout)
         android:label="STASTICS"
+=======
+        android:label="Stastics"
+>>>>>>> parent of f978cba (Updated a new layout)
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_settings"
         android:name="com.example.s1mplify.ui.SettingsFragment"
-        android:label="SETTINGS"
+        android:label="Settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/about_us"
         android:name="com.example.s1mplify.ui.aboutus"
-        android:label="ABOUT US"
+        android:label="About Us"
         tools:layout="@layout/fragment_aboutus" />
     <fragment
         android:id="@+id/sign_option"
         android:name="com.example.s1mplify.ui.LoginFragment"
-        android:label="SIGN IN/ SIGN UP"
+        android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 <<<<<<< HEAD
 >>>>>>> f978cba (Updated a new layout)
