@@ -13,5 +13,6 @@
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
     <color name="yellow">#EBD90A</color>
-    <color name="back_grey">#3D3D3D</color>
+    <color name="back_grey">#282828</color>
+    <color name="toolbar">#414141</color>
 </resources>
