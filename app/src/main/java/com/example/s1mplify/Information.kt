@@ -3,32 +3,76 @@ package com.example.s1mplify
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.widget.Button
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.s1mplify.databinding.ActivityInformationBinding
+import com.google.android.material.navigation.NavigationView
 
 class Information : AppCompatActivity() {
-    lateinit var binding: ActivityInformationBinding
+    lateinit var HOME: Button
+    lateinit var LEARN: Button
+    lateinit var DONATE: Button
+
+    private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityInformationBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.info)
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
 
-        //Profile mover
-        binding.profile.setOnClickListener{
-        val intent_Home: Intent = Intent(applicationContext,main::class.java)
-        startActivity(intent_Home)
+        val drawerLayout: DrawerLayout = findViewById(R.id.info_drawer)
+        val navView: NavigationView = findViewById(R.id.info_view)
+        val navController = findNavController(R.id.nav_info_fragment)
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.info, R.id.nav_stats, R.id.nav_settings,
+                R.id.about_us, R.id.sign_option
+            ), drawerLayout
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
+
+
+        HOME= findViewById(R.id.profile)
+
+        HOME.setOnClickListener{
+            val intent_Home: Intent = Intent(this,main::class.java)
+            startActivity(intent_Home)
         }
+        LEARN = findViewById(R.id.learn)
 
-        //Learn Activity Mover
-        binding.learn.setOnClickListener {
+        LEARN.setOnClickListener{
             val intent_learn: Intent = Intent(applicationContext, Learn::class.java)
             startActivity(intent_learn)
         }
-        //Donate Activity Mover
-        binding.donate.setOnClickListener{
-            val intent_donate: Intent =Intent(applicationContext,Donate::class.java )
+
+        DONATE = findViewById(R.id.donate)
+
+        DONATE.setOnClickListener{
+            val intent_donate: Intent = Intent(applicationContext, Donate::class.java )
             startActivity(intent_donate)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.main, menu)
+        return true
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_info_fragment)
+        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
 }

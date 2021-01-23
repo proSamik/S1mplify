@@ -12,7 +12,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.s1mplify.databinding.ActivityDonateBinding
 import com.google.android.material.navigation.NavigationView
 
 class Donate : AppCompatActivity() {
@@ -29,14 +28,14 @@ class Donate : AppCompatActivity() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        val navView: NavigationView = findViewById(R.id.nav_view)
-        val navController = findNavController(R.id.nav_host_fragment)
+        val drawerLayout: DrawerLayout = findViewById(R.id.donate_drawer)
+        val navView: NavigationView = findViewById(R.id.donate_view)
+        val navController = findNavController(R.id.nav_donate_fragment)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_stats, R.id.nav_settings,
+                R.id.donate_navigation, R.id.nav_settings,
                 R.id.about_us, R.id.sign_option
             ), drawerLayout
         )
@@ -72,7 +71,7 @@ class Donate : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment)
+        val navController = findNavController(R.id.nav_donate_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 }
