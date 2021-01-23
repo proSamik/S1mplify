@@ -22,11 +22,13 @@
         android:name="com.example.s1mplify.ui.SettingsFragment"
         android:label="SETTINGS"
         tools:layout="@layout/fragment_settings" />
+
     <fragment
         android:id="@+id/about_us"
         android:name="com.example.s1mplify.ui.aboutus"
         android:label="ABOUT US"
         tools:layout="@layout/fragment_aboutus" />
+
     <fragment
         android:id="@+id/sign_option"
         android:name="com.example.s1mplify.ui.LoginFragment"

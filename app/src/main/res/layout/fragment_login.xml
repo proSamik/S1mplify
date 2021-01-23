@@ -9,20 +9,23 @@
     android:paddingTop="@dimen/fragment_vertical_margin"
     android:paddingRight="@dimen/fragment_horizontal_margin"
     android:paddingBottom="@dimen/fragment_vertical_margin"
-    tools:context=".ui.LoginFragment">
+    tools:context=".ui.LoginFragment"
+    android:background="@color/back_grey">
 
     <EditText
         android:id="@+id/username"
         android:layout_width="331dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:textColorHint="@color/white"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"/>
 
     <EditText
         android:id="@+id/password"
@@ -37,7 +40,9 @@
         app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
 
     <Button
         android:id="@+id/login"
@@ -45,11 +50,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:enabled="false"
-        android:text="@string/action_sign_in"
+        android:text="SIGN IN/ SIGN UP"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:background="#FFC107"
+        android:textColor="@color/white"/>
 
 
 
@@ -62,5 +69,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login" />
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        android:textColor="@color/white"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
