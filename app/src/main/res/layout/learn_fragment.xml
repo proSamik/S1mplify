@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3D3D3D"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.learn_fragment">
 
     <TextView
         android:id="@+id/text_home"
         android:background="@color/white"
-        android:text="Learn"
+        android:text="Learn Fragment"
         android:textColor="@color/yellow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
