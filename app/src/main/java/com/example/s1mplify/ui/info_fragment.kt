@@ -18,6 +18,6 @@ class info_fragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater!!.inflate(R.layout.info_fragment,container,false)
+        return inflater!!.inflate(R.layout.donate_fragment,container,false)
     }
 }

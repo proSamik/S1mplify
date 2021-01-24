@@ -19,6 +19,6 @@ class SplashScreen : AppCompatActivity() {
             val intent = Intent(this, QuotesView::class.java)
             startActivity(intent)
             finish()
-        }, 2000)  //delay 2 seconds
+        }, 1500)  //delay 1.5 seconds
     }
 }

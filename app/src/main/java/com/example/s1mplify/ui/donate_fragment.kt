@@ -1,10 +1,13 @@
 package com.example.s1mplify.ui
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import com.example.s1mplify.R
 
 
@@ -18,6 +21,14 @@ class donate_fragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater!!.inflate(R.layout.donate_fragment,container,false)
+        val root = inflater!!.inflate(R.layout.donate_fragment,container,false)
+
+        val contact_us_btn: Button = root.findViewById(R.id.contactus)
+
+        contact_us_btn.setOnClickListener{
+            val intent = Intent(Intent.ACTION_DIAL,Uri.parse("tel:"+"7586972680"))
+                startActivity(intent)
+        }
+        return root
     }
 }

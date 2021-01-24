@@ -41,4 +41,9 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <string name="donate_quote">" Remember that the happiest people are not those getting more, but those giving more. "</string>
+    <string name="donate_content">Help other learners by donating your Old Books/ Study Materials/ Online Course codes or Accounts</string>
+
+
 </resources>
