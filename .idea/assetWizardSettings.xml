@@ -320,7 +320,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/crop_16_9/baseline_crop_16_9_24.xml" />
+                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/menu_book/baseline_menu_book_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -330,8 +330,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="e6e022" />
-                            <entry key="outputName" value="yellow_border" />
+                            <entry key="outputName" value="learn" />
                           </map>
                         </option>
                       </PersistentState>
