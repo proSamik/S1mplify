@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/text_home"
         android:background="@color/white"
-        android:text="Info Fragment"
+        android:text="@string/github_repository"
         android:textColor="@color/yellow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

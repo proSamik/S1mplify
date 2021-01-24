@@ -2,19 +2,19 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/info_navigation"
-    app:startDestination="@+id/info">
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
 
     <fragment
-        android:id="@+id/info"
-        android:name="com.example.s1mplify.ui.info_fragment"
-        android:label="INFORMATION"
-        tools:layout="@layout/info_fragment" />
+        android:id="@+id/nav_home"
+        android:name="com.example.s1mplify.ui.home.HomeFragment"
+        android:label="HOME"
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_stats"
         android:name="com.example.s1mplify.ui.gallery.GalleryFragment"
-        android:label="STATISTICS"
+        android:label="STASTICS"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment

@@ -8,9 +8,9 @@
         android:checkableBehavior="single">
 
         <item
-            android:id="@+id/learn"
-            android:icon="@drawable/learn"
-            android:title="LEARN"
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_round_person_24"
+            android:title="MY PROFILE"
             android:checked="true"/>
 
         <item

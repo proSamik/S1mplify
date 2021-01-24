@@ -21,6 +21,6 @@ class GalleryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater!!.inflate(R.layout.fragment_gallery,container,false)
+        return inflater!!.inflate(R.layout.fragment_settings,container,false)
     }
 }
