@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/nav_stats"
         android:name="com.example.s1mplify.ui.gallery.GalleryFragment"
-        android:label="STASTICS"
+        android:label="STATISTICS"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment

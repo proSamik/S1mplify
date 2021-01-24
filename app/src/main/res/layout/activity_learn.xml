@@ -7,36 +7,17 @@
     tools:context=".Learn"
     android:background="@color/back_grey">
 
-    <TextView
-        android:id="@+id/link1"
+    <fragment
+        android:id="@+id/nav_learn_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Link 1"
-        android:textSize="24dp"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@id/link2"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/link2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Link 2"
-        android:textSize="24dp"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@id/link3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/link1"/>
-    <TextView
-        android:id="@+id/link3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Link 3"
-        android:textSize="24dp"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@id/link2"
-        app:layout_constraintTop_toBottomOf="@id/link2"  />
+        app:layout_constraintTop_toTopOf="parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/learn_navigation"/>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
