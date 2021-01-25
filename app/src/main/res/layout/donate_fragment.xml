@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="60dp"
+    android:isScrollContainer="false"
+    android:scrollbars="vertical"
+    android:fitsSystemWindows="true"
     tools:context=".ui.donate_fragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/back_grey">
+        android:background="@color/back_grey"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/donate_quote"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="112dp"
+            android:layout_marginTop="60dp"
             android:fontFamily="@font/aladin"
             android:text="@string/donate_quote"
             android:textAlignment="center"
             android:textColor="@color/yellow"
-            android:textSize="45sp"
-            android:padding="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="35sp"
+            android:padding="15dp"/>
 
         <TextView
             android:id="@+id/donate_content"
@@ -37,28 +38,22 @@
             android:fontFamily="@font/aladin"
             android:text="@string/donate_content"
             android:textColor="@color/white"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/donate_quote"
+            android:textSize="25sp"
             tools:fontFamily="@font/adamina" />
 
         <Button
             android:id="@+id/contactus"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contact Us"
             android:textColor="@color/yellow"
             android:textSize="25sp"
             android:background="@drawable/slideshow_layout"
-            android:textAllCaps="false"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/donate_content"
-            app:layout_constraintVertical_bias="0.478" />
+            android:textAllCaps="false" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 
-</FrameLayout>
+</ScrollView>

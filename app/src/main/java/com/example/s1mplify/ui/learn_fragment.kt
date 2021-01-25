@@ -3,6 +3,7 @@ package com.example.s1mplify.ui
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -69,10 +70,10 @@ class learn_fragment : Fragment() {
             "Fluid Mechanics/Mechanical properties of fluid","Thermal properties of matter",
             "Kinetic theory of gases","Thermodynamics","Simple Harmonic Motion","Waves and sound")
 
-        val Chemistry= arrayListOf<String>("Select Here","Equilibirium","Mole Concept","Surface Chemistry")
+        val Chemistry= arrayListOf<String>("Select Here","Electrochemistry","Solid State")
 
-        val Mathematics = arrayListOf<String>("Select Here","Trigonometry","Matrix & Determinants",
-            "Integral Calculus","Differential Calculus")
+        val Mathematics = arrayListOf<String>("Select Here","Limits","Matrix",
+            "Functions")
 
         //Ceating Adapter for Topics
 
@@ -115,6 +116,8 @@ class learn_fragment : Fragment() {
                 TODO("Not yet implemented")
             }
         }
+//******************************************************************************************\\
+
 
         Topics_Spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onItemSelected(
@@ -123,7 +126,6 @@ class learn_fragment : Fragment() {
                 position: Int,
                 id: Long
             ) {
-                var bool=true
 
                 var Topic_link: String = "Link"
 
@@ -146,13 +148,16 @@ class learn_fragment : Fragment() {
                     "Thermodynamics" -> "https://www.youtube.com/playlist?list=PLF_7kfnwLFCFPfN4TGeJt1PQpJd3MG6Zz"
                     "Simple Harmonic Motion" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPsvtPPERcgGcWmfI4vZg_jLM"
                     "Waves and sound" -> "https://www.youtube.com/playlist?list=PLF_7kfnwLFCEp1eygWPhgPI6A9th2Fw-S"
-
-
+                    "Electrochemistry" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPssTn-R9X3BZCms9NKpUFUb0"
+                    "Solid State" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPsuJoldXfEROqx5oRXwQcaa5"
+                    "Limits" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPstS3DTIyqkUecSW_7axdxKe"
+                    "Matrix" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPsulk5jpAkbkoyB5zh3g5Rzg"
+                    "Functions" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPsvvReauHlV0an7GLbBce3xF"
                     else -> "Nothing"
+
                 }
-                if(Topic_link=="Nothing" && Topic_link!="Select Here" ){
-                    val toast = Toast.makeText(activity,"Select Topic",Toast.LENGTH_SHORT)
-                    toast.show()
+                if(Topic_link=="Nothing" && Topic_link=="Select Here" ){
+                    Log.d("Not Selected","Not selected spinner")
                 }
                 else{
                     val imgbtn : Button = root.findViewById(R.id.youtube)
@@ -160,6 +165,7 @@ class learn_fragment : Fragment() {
                         imgbtn.setOnClickListener{
                             val youtube_intent = Intent(Intent.ACTION_VIEW, Uri.parse(Topic_link))
                             startActivity(youtube_intent)
+                            val toast = Toast.makeText(activity,Topic,Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
