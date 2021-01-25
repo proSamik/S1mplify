@@ -129,11 +129,12 @@
             android:id="@+id/imagelayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="#0D2E2E2E">
 
             <Button
                 android:id="@+id/youtube"
-                android:background="@color/back_grey"
+                android:background="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

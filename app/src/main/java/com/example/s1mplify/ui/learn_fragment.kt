@@ -127,7 +127,7 @@ class learn_fragment : Fragment() {
                 id: Long
             ) {
 
-                var Topic_link: String = "Link"
+                var Topic_link = "Select Here"
 
                 val Topic = GlobalSubject.get(position)
 
@@ -151,22 +151,21 @@ class learn_fragment : Fragment() {
                     "Electrochemistry" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPssTn-R9X3BZCms9NKpUFUb0"
                     "Solid State" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPsuJoldXfEROqx5oRXwQcaa5"
                     "Limits" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPstS3DTIyqkUecSW_7axdxKe"
-                    "Matrix" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPsulk5jpAkbkoyB5zh3g5Rzg"
-                    "Functions" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPsvvReauHlV0an7GLbBce3xF"
+                    "Matrix" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPsvvReauHlV0an7GLbBce3xF"
+                    "Functions" -> "https://www.youtube.com/playlist?list=PLbu_fGT0MPsulk5jpAkbkoyB5zh3g5Rzg"
                     else -> "Nothing"
 
                 }
-                if(Topic_link=="Nothing" && Topic_link=="Select Here" ){
-                    Log.d("Not Selected","Not selected spinner")
+                if(Topic_link=="Nothing" || Topic_link=="Select Here" ){
+                    Log.d("Not Selected","Not Selected spinner")
                 }
-                else{
+                else if(Topic_link!="Select Here"){
                     val imgbtn : Button = root.findViewById(R.id.youtube)
-                    if(Topic_link!="Select Here"){
                         imgbtn.setOnClickListener{
                             val youtube_intent = Intent(Intent.ACTION_VIEW, Uri.parse(Topic_link))
                             startActivity(youtube_intent)
                             val toast = Toast.makeText(activity,Topic,Toast.LENGTH_SHORT).show()
-                        }
+
                     }
                 }
             }

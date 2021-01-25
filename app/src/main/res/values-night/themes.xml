@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.S1mplify" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#3D3D3D</item>
-        <item name="colorPrimaryVariant">#3D3D3D</item>
+        <item name="colorPrimary">#414141</item>
+        <item name="colorPrimaryVariant">#282828</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/white</item>
